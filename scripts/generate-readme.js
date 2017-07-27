@@ -10,7 +10,7 @@ var cnt = `
 
 ## Templates
 
-Frameworks often use HTML as a basis for templates.
+Frameworks often use HTML-templates as a basis for views.
 Custom attributes are introduced for looping, branching etc.
 At some point this HTML must be compiled into javascript,
 in a way that keeps the user safe from cross site scripting.
