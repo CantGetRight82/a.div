@@ -1,0 +1,7 @@
+var app3 = a.div( { id:'app-3' },
+	a.p('Now you see me'),
+	function seen(b) {
+		this.q('p').el.style.display = b ? '' : 'none';
+	}
+).toBody()
+

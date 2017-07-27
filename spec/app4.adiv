@@ -1,0 +1,17 @@
+var app4 = a.div(
+	{ id:'app-4' },
+	a.ol(),
+	function todos(arr) {
+		var ol = this.q('ol');
+		ol.empty()
+		arr.forEach( (todo) => {
+			ol.add( a.li(todo.text) );
+		})
+	}
+).toBody();
+
+app4.todos([
+	{ text: 'Learn JavaScript' },
+	{ text: 'Learn Vue' },
+	{ text: 'Build something awesome' }
+])

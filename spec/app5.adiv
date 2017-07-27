@@ -1,0 +1,7 @@
+a.div( { id:'app-5' },
+	a.p('Hello Vue.js!'),
+	a.button('Reverse message').on('click', function() {
+		var p = this.parent().q('p');
+		p.text( p.text().split('').reverse().join('') );
+	})
+ ).toBody()

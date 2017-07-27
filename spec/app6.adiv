@@ -1,0 +1,6 @@
+a.div( { id:'app-6' },
+	a.p(),
+	a.input( { value:'Hello Vue!' }).on('input', function() {
+		this.parent().q('p').text( this.el.value );
+	}).trigger()
+).toBody()

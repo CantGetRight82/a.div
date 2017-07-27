@@ -1,0 +1,25 @@
+{
+  "name": "adiv",
+  "version": "0.1.0",
+  "description": "",
+  "main": "umd.js",
+  "module": "esm.js",
+  "browser": "umd.min.js",
+  "scripts": {
+    "test": "jasmine",
+	"build": "node scripts/build.js",
+	"docs": "node scripts/generate-readme.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "jasmine": "^2.6.0",
+    "rollup-plugin-buble": "^0.15.0",
+    "jsdom": "^11.1.0",
+    "rollup": "^0.45.2",
+    "uglify-js": "^3.0.26"
+  }
+}

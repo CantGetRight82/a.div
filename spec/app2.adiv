@@ -1,0 +1,9 @@
+a.div(
+	{ id:'app-2' },
+	a.span( { title: 'You loaded this page on ' + new Date() },
+		`Hover your mouse over me for a few seconds
+		to see my dynamically bound title!` ),
+	function title(str) {
+		this.qs('span').setAttribute('title', str);
+	}
+).toBody()

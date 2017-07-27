@@ -1,0 +1,3 @@
+a.div('Hello Vue!', { id:'app', message:function(str) {
+	this.text(str);
+}}).toBody()
