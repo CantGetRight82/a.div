@@ -92,10 +92,6 @@ a('header',
 */
 ```
 
-
-
-
-
 ## Code size comparison
 ### Disclaimer
 
@@ -110,7 +106,7 @@ vue.runtime.min.js (2.4.2)
 58398 bytes
 
 adiv.min.js
-1551 bytes
+1536 bytes
 
 
 ---

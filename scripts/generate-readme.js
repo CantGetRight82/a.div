@@ -3,6 +3,8 @@ const fs = require('fs');
 
 const root = __dirname + '/../';
 
+var minifiedSize = fs.statSync( root + 'umd.min.js').size;
+
 var cnt = `
 # a.div
 
@@ -97,10 +99,6 @@ a('header',
 */
 \`\`\`
 
-
-
-
-
 ## Code size comparison
 ### Disclaimer
 
@@ -115,7 +113,7 @@ vue.runtime.min.js (2.4.2)
 58398 bytes
 
 adiv.min.js
-1551 bytes
+${minifiedSize} bytes
 
 
 `

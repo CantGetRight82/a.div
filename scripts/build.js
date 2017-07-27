@@ -17,6 +17,8 @@ rollup.rollup({
 		var code = fs.readFileSync('umd.js').toString();
 		var result = UglifyJS.minify(code);
 		fs.writeFileSync('umd.min.js', result.code );
+
+		require('./generate-readme.js');
 	});
 
 
